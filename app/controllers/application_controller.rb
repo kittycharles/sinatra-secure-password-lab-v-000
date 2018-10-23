@@ -49,7 +49,7 @@ class ApplicationController < Sinatra::Base
       redirect '/failure'
     end
     if user.logged_in?(session)
-      redirect '/account'
+      redirect 'account'
     else
       redirect '/failure'
     end
